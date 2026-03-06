@@ -8,10 +8,10 @@ let p1Wins=0
 let p2Wins=0
 let draws=0
 
-const icons = {
-R: "✊",
-P: "✋",
-S: "✌️"
+const icon={
+R:"🪨",
+P:"📄",
+S:"✂️"
 }
 
 const screens=document.querySelectorAll(".screen")
