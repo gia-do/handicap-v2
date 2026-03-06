@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RPS Handicap Battle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="app">
+
+<!-- START SCREEN -->
+<div id="screen-start" class="screen active">
+
+<h1>RPS Handicap Battle</h1>
+
+<div class="setup">
+
+<div class="select-group">
+<label>Player 1 Rounds</label>
+<select id="roundsP1"></select>
+</div>
+
+<div class="select-group">
+<label>Player 2 Rounds</label>
+<select id="roundsP2"></select>
+</div>
+
+</div>
+
+<button id="startBtn" class="primary">START</button>
+
+</div>
+
+
+<!-- PLAYER 1 -->
+<div id="screen-p1" class="screen">
+
+<h2>Player 1</h2>
+<p>Select your moves</p>
+
+<div id="p1Moves" class="moves"></div>
+
+<div class="rps-buttons">
+<button data-move="R">🪨</button>
+<button data-move="P">📄</button>
+<button data-move="S">✂️</button>
+</div>
+
+<button id="confirmP1" class="primary">CONFIRM</button>
+
+</div>
+
+
+<!-- PASS SCREEN -->
+<div id="screen-pass" class="screen">
+
+<h2>PASS THE PHONE</h2>
+<p>TO PLAYER 2</p>
+
+<button id="readyBtn" class="primary">READY</button>
+
+</div>
+
+
+<!-- PLAYER 2 -->
+<div id="screen-p2" class="screen">
+
+<h2>Player 2</h2>
+<p>Select your moves</p>
+
+<div id="p2Moves" class="moves"></div>
+
+<div class="rps-buttons">
+<button data-move="R">🪨</button>
+<button data-move="P">📄</button>
+<button data-move="S">✂️</button>
+</div>
+
+<button id="confirmP2" class="primary">CONFIRM</button>
+
+</div>
+
+
+<!-- RESULT -->
+<div id="screen-result" class="screen">
+
+<h1 id="resultTitle">RESULT!</h1>
+
+<table id="resultTable">
+<thead>
+<tr>
+<th>#</th>
+<th>Player 1</th>
+<th>Player 2</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<div id="finalResult"></div>
+
+<div class="buttons">
+<button id="replayBtn">REPLAY</button>
+<button id="resetBtn">RESET</button>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
